@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Donate"
+    android:background="@drawable/donation"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/gcash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="81dp"
+        android:backgroundTint="#00BF63"
+        android:fontFamily="sans-serif-light"
+        android:text="GCASH"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/paymaya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/paymaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#00BF63"
+        android:fontFamily="sans-serif-light"
+        android:text="PayMaya"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <Button
+        android:id="@+id/creditcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="127dp"
+        android:backgroundTint="#00BF63"
+        android:fontFamily="sans-serif-light"
+        android:text="Credit Card/Debit Card"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="78dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="288dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gcash" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="128dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/paymaya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/paymaya" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="177dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="117dp"
+        app:layout_constraintBottom_toTopOf="@+id/creditcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymaya"
+        app:srcCompat="@drawable/creditcard" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="208dp"
+        android:backgroundTint="#00BF63"
+        android:fontFamily="serif"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditcard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

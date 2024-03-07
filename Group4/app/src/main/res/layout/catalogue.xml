@@ -1,0 +1,106 @@
+<!-- res/layout/activity_catalog.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bamboocatalogue"
+    tools:context=".CatalogActivity">
+
+
+    <ImageButton
+        android:id="@+id/book4"
+        android:layout_width="127dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book3"
+        app:layout_constraintTop_toBottomOf="@+id/book2"
+        app:srcCompat="@drawable/book4" />
+
+    <ImageButton
+        android:id="@+id/book3"
+        android:layout_width="125dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/book4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book1"
+        app:srcCompat="@drawable/book3" />
+
+    <ImageButton
+        android:id="@+id/book2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/book4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book1"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/book2" />
+
+    <ImageButton
+        android:id="@+id/book1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/book3"
+        app:layout_constraintEnd_toStartOf="@+id/book2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/book1" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/book1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="144dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:fontFamily="serif"
+        android:text="Workshop"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

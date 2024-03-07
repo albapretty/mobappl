@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".donatesuccess"
+    android:background="@drawable/successdonate"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="DONATION SUCCESSFUL! THANK YOU SO MUCH!"
+        android:textColor="#00BF63"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="209dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/backhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/checkmark" />
+
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="209dp"
+        android:backgroundTint="#00BF63"
+        android:fontFamily="serif"
+        android:text="Back To Home"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
